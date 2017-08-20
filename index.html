@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+		<script src="/assets/js/particles.js"></script>
+		<script src="/assets/js/app.js"></script>
+	</head>
+	<body class="is-loading">
+			<div id="wrapper">
+				<div id="particles-js"></div>
+					<section id="main">
+						<body>
+							<div>
+								<span id="status">Connecting...</span>
+								<input type="text" id="input" disabled="disabled" />
+							</div>
+					    <div id="content"></div>
+					    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+					    </script>
+					    <script src="/frontend.js"></script>
+							<hr>
+							<h1><a href="/about/">What is this?</a></h1>
+					</section>
+					<footer id="footer">
+					</footer>
+			</div>
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+	</body>
+</html>

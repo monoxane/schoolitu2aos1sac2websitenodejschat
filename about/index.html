@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+		<script src="/assets/js/particles.js"></script>
+    <script src="/assets/js/app.js"></script>
+	</head>
+	<body class="is-loading">
+			<div id="wrapper">
+				<div id="particles-js"></div>
+					<section id="main">
+						<body>
+							<h1>What is this?</h1>
+              <hr>
+              <p>
+                This is a client-server chat based on node.js, it pipes raw text through a websocket, stores it in an array on the server and sends it back out to all connecting websockets except for the one that sent it.
+              </p>
+              <br>
+              <p>
+                It uses client-side javascript to add the websocket transported text into the chat window div and to sent the data through the websockets
+              </p>
+              <br>
+              <p>
+                The background is <a href="http://vincentgarreau.com/particles.js/">particles.js</a>
+              </p>
+					</section>
+					<footer id="footer">
+					</footer>
+			</div>
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+	</body>
+</html>
