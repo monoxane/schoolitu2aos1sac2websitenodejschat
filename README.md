@@ -1,4 +1,4 @@
-ITU2AOS3-SAC2-Website | NodeJS chat service
+ITU2AOS1-SAC2-Website | NodeJS chat service
 ==
 A simple chat app utilising [this random gist by Martin Sikora](https://gist.github.com/martinsik/2031681), [particles.js byVincent Garreau](https://github.com/VincentGarreau/particles.js/) and [Identity by html5up.net](https://html5up.net/identity)
 
